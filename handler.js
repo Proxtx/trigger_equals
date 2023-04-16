@@ -35,8 +35,7 @@ const createNewConfig = () => {
       const triggerConfig = triggerGui.getElementsByClassName("triggerConfig");
       let elem = triggerConfig[triggerConfig.length - 1];
       await uiBuilder.ready(elem);
-      await elem.component.prepare();
-      console.log(config);
+      await elem.component.prepareCall;
       triggerConfig[triggerConfig.length - 1].component.loadConfig(config);
     }
   }
